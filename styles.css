@@ -1,31 +1,28 @@
-/* General Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
     margin: 0;
     padding: 20px;
-    box-sizing: border-box;
+    text-align: center;
   }
   
   h1 {
-    text-align: center;
     color: #333;
+    margin-bottom: 20px;
   }
   
-  /* Ramen Menu */
   #ramen-menu {
     display: flex;
-    gap: 15px;
     justify-content: center;
+    gap: 15px;
     margin-bottom: 20px;
-    flex-wrap: wrap;
   }
   
   #ramen-menu img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 130px;
+    height: 130px;
     object-fit: cover;
+    border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
   }
@@ -34,45 +31,42 @@ body {
     transform: scale(1.1);
   }
   
-  /* Ramen Detail */
   #ramen-detail {
-    text-align: center;
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
-    margin: 0 auto 20px auto;
-    max-width: 600px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
   }
   
-  #ramen-detail h2, h3, p {
-    margin: 10px 0;
-  }
-  
-  /* New Ramen Form */
-  #new-ramen {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 400px;
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50%;
     margin: 0 auto;
   }
   
-  #new-ramen input, textarea, button {
+  input[type="text"], input[type="url"], input[type="number"], textarea, select {
+    width: 100%;
     padding: 10px;
-    font-size: 14px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box;
   }
   
-  #new-ramen button {
-    background-color: #ff6347;
+  input[type="submit"] {
+    background-color: #4caf50;
     color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
   }
   
-  #new-ramen button:hover {
-    background-color: #e5533d;
+  input[type="submit"]:hover {
+    background-color: #45a049;
   }
   
