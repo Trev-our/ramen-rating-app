@@ -6,8 +6,9 @@ const ramens = [
  ]
 // Function to display all ramen images in the #ramen-menu div
 function displayAllRamen() {
-  const ramenMenu = document.querySelector('#ramen-menu');
-  ramen.forEach(ramen => {
+  const ramenMenu = document.getElementById('#ramen-menu');
+  ramenMenu.innerHTML = '';// clear the existing content
+  ramens.forEach((ramen) => {
     const ramenImg = document.createElement('img');
     img.src = ramen.image;
     img.alt = ramen.name;
@@ -19,11 +20,11 @@ function displayAllRamen() {
 
 // Function to display ramen details in the #ramen-detail div
 function handleClick(ramen) {
-  const ramenDetail = document.querySelector('#ramen-detail');
-  ramenDetail.innerHTML = `
+  const detaildiv = document.getElementById('#ramen-detail');
+  ramenDetaildiv.innerHTML = `
     <h2>${ramen.name}</h2>
     <h3>${ramen.restaurant}</h3>
-    ${ramen.rating ? `<h3>Rating: ${ramen.rating}</h3>` : ''}
+    ${ramen.rating ? `<p>Rating: ${ramen.rating}<p>` : ''}
     ${ramen.comments ? `<p>Comment:${ramen.comments}</p>` : ''}
   `;
 }
@@ -32,13 +33,13 @@ function handleClick(ramen) {
 function addSubmitHandler() {
     const form = document.getElementById('#new-ramen');
     form.addEventListener('submit', (e) => {
-        e.preventDefault();
+        e.preventDefault();// prevent the default form submission
         const newRamen = {
             id: ramens.length + 1,
             name: form.name.value,
             restaurant: form.restaurant.value,
             image: form.image.value,
-            rating: form.rating.value,
+            rating: form.rating.value ? parseInt(form.rating.value) : null,
             comments: form.comments.value
         };
         
