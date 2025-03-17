@@ -66,6 +66,7 @@ editForm.onsubmit = (e) => {
 // Add event listener for the delete button
 const deleteButton = document.getElementById("delete-ramen");
 deleteButton.onclick = () => deleteRamen(ramen);
+
         // add new ramen to our array and update the display
         ramens.push(newRamen);
         displayAllRamen();
