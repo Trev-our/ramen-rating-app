@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #500909;
+    background-color: #ece8e8;
     margin: 0;
     padding: 20px;
     text-align: center;
   }
   
   h1 {
-    color: #ece0e0;
+    color: #1b1a1a;
     margin-bottom: 20px;
   }
   
@@ -32,15 +32,15 @@ body {
   }
   
   #ramen-detail {
-    background-color: #4b0606;
+    background-color: #e7e3e3;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(235, 230, 230, 0.1);
+    box-shadow: 0 4px 6px rgb(252, 252, 252);
     margin-bottom: 20px;
   }
   
   form {
-    background-color: #3d0505;
+    background-color: #ebe6e6;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgb(221, 220, 220);
@@ -58,7 +58,7 @@ body {
   }
   
   input[type="submit"] {
-    background-color: #4caf50;
+    background-color: #070707;
     color: rgb(236, 230, 230);
     border: none;
     padding: 10px 15px;
