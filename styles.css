@@ -32,12 +32,13 @@ body {
     transform: scale(1.1);
   }
   
-  #ramen-detail {
-    background-color: #e7e3e3;
-    padding: 20px;
+  #ramen-detail img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
     border-radius: 10px;
-    box-shadow: 0 4px 6px #fcfcfc00;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+
   }
   
   form {

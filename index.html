@@ -3,75 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramen Rating App</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="index.js" defer></script> 
+    <title>Ramen-rating-app</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
     <header>
-        <h1>Ramen Rating App</h1>
+        <h1>Ramen Rater</h1>
     </header>
-
-    <!-- Ramen menu section -->
-    <div id="ramen-menu">
-        <img src="https://images.pexels.com/photos/23645816/pexels-photo-23645816/free-photo-of-overhead-view-of-a-ramen-bowl.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" height="130" width="130">
-        <img src="https://images.pexels.com/photos/9772439/pexels-photo-9772439.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" height="130" width="130">
-        <img src="https://images.pexels.com/photos/19879442/pexels-photo-19879442/free-photo-of-soup-with-shrimps-served-in-a-restaurant.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" height="130" width="130">
-        <img src="https://images.pexels.com/photos/6646084/pexels-photo-6646084.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" height="130" width="130">
-        <img src="https://images.pexels.com/photos/28712897/pexels-photo-28712897/free-photo-of-delicious-bowl-of-vietnamese-pho-noodle-soup.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" height="130" width="130">
-    </div>
-    <div id="ramen-detail">
-        <img src="https://images.pexels.com/photos/23645816/pexels-photo-23645816/free-photo-of-overhead-view-of-a-ramen-bowl.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="" height="130" width="130">
- 
-    </div>
-        <div id="ramen-detail">
-            
-            <h2 class="name"></h2>
-            <h3 class="restaurant"></h3>
-            <p class="rating"></p>
-            <p class="comment"></p>
-            <!-- Edit form for rating and comment -->
-            <form id="edit-ramen">
-                <label for="edit-rating">Rating:</label>
-                <input type="number" id="edit-rating" name="edit-rating" min="1" max="10" required>
-                
-                <label for="edit-comment">Comment:</label>
-                <textarea id="edit-comment" name="edit-comment" required></textarea>
-                
-                <button type="submit">Update</button>
-            </form>
-
-
-            <!-- Delete button -->
-            <button id="delete-ramen">Delete Ramen</button>
-        </div>
-
-
-
-  <!-- Container to display details of a selected ramen -->
-  <div id="ramen-detail"></div>
-
-  <!-- Form to add a new ramen -->
-  <form id="new-ramen">
-    <h3>Add New Ramen</h3>
-    <input type="text" name="name" placeholder="Name" required>
-    <input type="text" name="restaurant" placeholder="Restaurant" required>
-    <input type="text" name="image" placeholder="Image URL" required>
-    <input type="number" name="rating" placeholder="Rating">
-    <input type="text" name="comment" placeholder="Comment">
-    <button type="submit">Add Ramen</button>
-
-    Comment: <textarea name="Comment" id="" rows="2"></textarea>
-    <input type='Submit' value='Create' class="title">
     
-<button type="submit">Add Ramen</button>
-  </form>
-
-  <!-- Link your JavaScript file -->
-  <script src="index.js" defer></script>
-</body>
-</html>
-
-
+    <div id="ramen-menu">
+    </div>
+    
+    <div id="ramen-detail">
+        <img id="detail-image" src="" alt="Ramen Image">
+        <h2 id="detail-name"></h2>
+        <h3 id="detail-restaurant"></h3>
+        <p id="detail-rating"></p>
+        <p id="detail-comment"></p>
+    </div>
+    <form action="ramenapp" method="get" id="new-ramen"> 
+        <input type="text" name="Add new Ramen" value="Add new Ramen" class="title">
+        Name:<input type="text" id="detail-name">
+        Restaurant:<input type="text" id="detail-restaurant">
+        Image:<input type="url" placeholder="imageurl" required id="detail-image">
+        Rating: <input type="number" id="detail-rating" name="rating" min="1" max="10" required>
+        Comment: <textarea name="Comment" id="detail-comment" rows="2"></textarea>
+        <button type="submit" class="title">Create</button>
+    </form>
+    <script src="./index.js"></script>
 </body>
 </html>
